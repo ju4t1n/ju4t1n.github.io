@@ -1,13 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>我的第一个网站</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chengxin Shi — M.S. student in Civil Engineering at Chongqing University. Research interests include infrastructure digital twins, point clouds, and Scan-to-BIM.">
+  <meta name="theme-color" content="#f1f5f9">
+  <title>Chengxin Shi — Civil Engineering</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%232d5e92'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia' font-size='20' fill='white'%3ECS%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<h3>欢迎来到我的网站</h3>
-<a href="https://www.baidu.com" target="_blank">baidu</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top"><span class="brand-mark">CS</span><span>CHENGXIN SHI <small>ACADEMIC PROFILE</small></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#honors">Honors &amp; Interests</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="top">
+    <section class="profile" id="bio" aria-labelledby="name">
+      <div class="portrait-frame">
+        <img class="portrait" src="assets/profile-photo.jpg" alt="Chengxin Shi holding a camera">
+      </div>
+      <div class="profile-copy">
+        <p class="eyebrow">SHORT BIO <span>—</span> CIVIL ENGINEERING</p>
+        <h1 id="name">Chengxin Shi</h1>
+        <p class="affiliation">M.S. Student · <a href="https://www.cqu.edu.cn/" target="_blank" rel="noopener noreferrer">Chongqing University</a></p>
+        <p class="bio-text">I am a master's student in Civil Engineering at Chongqing University, advised by Prof. Jiepeng Liu and Prof. Pengkun Liu. My work connects computer vision, building information modeling, and infrastructure engineering to make digital representations more useful in practice.</p>
+        <p class="bio-text">I received my B.Eng. in Civil Engineering (Structural Engineering) from Chang'an University in 2024. I am especially interested in how digital methods can help us understand, monitor, and manage the built environment.</p>
+        <div class="profile-details">
+          <div><span>2024 — present</span><strong>M.Eng. in Civil Engineering</strong><small>Chongqing University · GPA 4.5/5.0</small></div>
+          <div><span>2020 — 2024</span><strong>B.Eng. in Civil Engineering</strong><small>Chang'an University · GPA 3.66/4.0</small></div>
+        </div>
+        <a class="email" href="mailto:scx0108@outlook.com">scx0108@outlook.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section-row" id="research" aria-labelledby="research-title">
+      <div class="section-label"><span class="section-number">01</span><h2 id="research-title">Research<br>in Progress</h2><p>Current questions and ongoing work.</p></div>
+      <div class="section-body research-list">
+        <article class="research-item">
+          <div class="item-kicker"><span>2025 — PRESENT</span><span class="blue-dot"></span></div>
+          <h3>Long-Chain Digital Twin for Municipal Infrastructure</h3>
+          <p>Developing point-cloud methods for shield tunnel lining understanding, including Adaptive Hybrid Prompting for SAM, alongside a synchronization workflow between Revit and Omniverse.</p>
+          <div class="metrics"><span><b>84.62%</b> F1-score</span><span><b>77.88%</b> mIoU</span><span>Evaluated on four shield tunnels</span></div>
+        </article>
+        <article class="research-item">
+          <div class="item-kicker"><span>2026 — PRESENT</span><span class="blue-dot"></span></div>
+          <h3>LLM-Driven Multi-Agent Framework for Automated Scan-to-BIM</h3>
+          <p>Developing role-based agents to convert laser scans into IFC-compliant models, with a spatial knowledge graph for natural-language queries and a reusable IFC skill library.</p>
+          <div class="metrics"><span><b>99.0%</b> element detection</span><span><b>0.028 m</b> mean error</span><span>Evaluated on CISD and BIMNet</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-row" id="publications" aria-labelledby="publications-title">
+      <div class="section-label"><span class="section-number">02</span><h2 id="publications-title">Publications<br>&amp; Manuscripts</h2><p>Status follows my current CV.</p></div>
+      <ol class="section-body publication-list">
+        <li class="publication-item"><span class="pub-year">2026</span><div><h3><a href="https://www.iaarc.org/publications/2026_proceedings_of_the_43rd_isarc_singapore/zero_shot_instance_segmentation_of_shield_tunnel_linings_via_adaptive_sam_and_generative_inpainting.html" target="_blank" rel="noopener noreferrer">Zero-Shot Instance Segmentation of Shield Tunnel Linings via Adaptive SAM and Generative Inpainting ↗</a></h3><p><strong>Chengxin Shi</strong>, Jiepeng Liu, Dongsheng Li, Pengkun Liu, Yongjing Wang, Shan Huang</p><small>43rd International Symposium on Automation and Robotics in Construction (ISARC), pp. 1293–1299</small></div><span class="pub-status">Published</span></li>
+        <li class="publication-item"><span class="pub-year">2025</span><div><h3>Parameterized Reconstruction of Interior Contours for Multi-Type Linear Municipal Engineering Structures Based on Point Cloud</h3><p>Junjie Meng, Pengkun Liu, Dongsheng Li, Jiepeng Liu, <strong>Chengxin Shi</strong>, Yi Rao, Jing Zhou, Wei Wei</p><small>Sustainable Civil Infrastructure</small></div><span class="pub-status">Accepted</span></li>
+        <li class="publication-item publication-illustrated"><span class="pub-year">2026</span><div class="publication-copy"><h3>Robust Tunnel Lining Segmentation in Data-Scarce Scenarios with Adaptive Hybrid Segmentation Prompting for SAM and Generative Inpainting</h3><p><strong>Chengxin Shi</strong>, Jiepeng Liu, Tong Guo, Pengkun Liu, Dongsheng Li, Chengran Xu, Junwen Zhou</p><small>Automation in Construction</small><span class="pub-status muted-status">Under review</span></div><figure class="paper-figure"><img src="assets/paper/SAM.jpg" alt="Workflow for adaptive hybrid prompting and tunnel lining segmentation with SAM"><figcaption>Adaptive SAM segmentation workflow</figcaption></figure></li>
+        <li class="publication-item publication-illustrated"><span class="pub-year">2026</span><div class="publication-copy"><h3>A Multi-Agent Framework for Automated Scan-to-BIM: Integrating LLM-Driven Model Generation with Knowledge-Graph-Based Natural Language Querying</h3><p><strong>Chengxin Shi</strong>, Bo Yao, Jiepeng Liu, Dongsheng Li, Bo Ping, Pengkun Liu</p><small>Journal of Building Engineering</small><span class="pub-status muted-status">Under review</span></div><figure class="paper-figure"><img src="assets/paper/LLM.jpg" alt="Multi-agent BIM generation and natural-language querying workflow"><figcaption>Multi-agent Scan-to-BIM workflow</figcaption></figure></li>
+      </ol>
+    </section>
+
+    <section class="section-row" id="experience" aria-labelledby="experience-title">
+      <div class="section-label"><span class="section-number">03</span><h2 id="experience-title">Competitions<br>&amp; Projects</h2><p>Selected project and team experience.</p></div>
+      <div class="section-body experience-grid">
+        <div class="experience-column">
+          <h3 class="subheading">Project Experience</h3>
+          <article class="experience-item"><span class="experience-year">2022–2023</span><h4>EICP for Earthen-Site Crack Repair</h4><p class="role">Provincial Undergraduate Innovation Project · Project Lead</p><p>Studied enzyme-induced calcium carbonate precipitation for earthen-site conservation through laboratory tests, urease activity analysis, and COMSOL simulation.</p></article>
+          <article class="experience-item"><span class="experience-year">2022</span><h4>Construction-Waste Reuse &amp; Rural Revitalization</h4><p class="role">“Internet+” Innovation and Entrepreneurship Competition · Team Leader</p><p>Led a team proposing a reuse pathway for construction debris, connecting recycled materials with red-tourism cultural products.</p></article>
+        </div>
+        <div class="experience-column competitions">
+          <h3 class="subheading">Competitions &amp; Teamwork</h3>
+          <ul class="compact-list">
+            <li><span>2022</span><p><strong>National Advanced Drawing Contest</strong><br>Individual All-Round Second Prize · Team Second Prize</p></li>
+            <li><span>2022</span><p><strong>National Smart City &amp; Intelligent Construction Competition</strong><br>National Third Prize · Core Team Member</p></li>
+          </ul>
+          <div class="video-demo">
+            <div class="video-demo-head"><span>Project demonstration</span><div class="player-tools"><div class="speed-control" role="group" aria-label="Video playback speed"><span>Speed</span><button type="button" data-rate="1" aria-pressed="true">1×</button><button type="button" data-rate="1.5">1.5×</button><button type="button" data-rate="2">2×</button><button type="button" data-rate="3">3×</button></div><a class="video-open" href="assets/competition/smart-city-project.mp4" target="_blank" rel="noopener noreferrer">Open video ↗</a></div></div>
+            <video id="smart-city-video" controls playsinline preload="metadata"><source src="assets/competition/smart-city-project.mp4" type="video/mp4">Your browser does not support HTML video. <a href="assets/competition/smart-city-project.mp4">Open the video file</a>.</video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-row honors-section" id="honors" aria-labelledby="honors-title">
+      <div class="section-label"><span class="section-number">04</span><h2 id="honors-title">Honors<br>&amp; Interests</h2><p>Milestones beyond the manuscripts.</p></div>
+      <div class="section-body">
+        <div class="honors-interests">
+          <div>
+            <h3 class="subheading">Selected Honors</h3>
+            <ul class="honor-list">
+              <li><span>2022</span><strong>National Scholarship</strong></li>
+              <li><span>2024</span><strong>Outstanding Graduate, Chang'an University</strong></li>
+              <li><span>2024–2026</span><strong>Academic Scholarship, Chongqing University</strong></li>
+              <li><span>2022</span><strong>National Advanced Drawing Contest · Individual Second Prize</strong></li>
+            </ul>
+          </div>
+          <div class="interests-block">
+            <h3 class="subheading">Outside the Lab</h3>
+            <p>Photography and reading. I enjoy noticing the character of a place through a camera, and finding new perspectives in books.</p>
+            <div class="interest-tags"><span>Photography</span><span>Reading</span></div>
+            <p class="motto">“Truthful · Kind · Healthy · Happy”</p>
+          </div>
+        </div>
+        <div class="certificate-heading"><h3 class="subheading">Selected Certificates</h3><span>Click to view</span></div>
+        <div class="certificate-list">
+          <a href="assets/awards/national-scholarship.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/awards/national-scholarship.jpg" alt="National Scholarship certificate"><span>National Scholarship</span></a>
+          <a href="assets/awards/drawing-competition.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/awards/drawing-competition.jpg" alt="Advanced Drawing Contest certificate"><span>Advanced Drawing Contest</span></a>
+          <a href="assets/awards/drawing-team-second.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/awards/drawing-team-second.jpg" alt="Second prize team certificate from the National Advanced Drawing Contest"><span>Advanced Drawing Contest · Team Second Prize</span></a>
+          <a href="assets/awards/smart-city.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/awards/smart-city.jpg" alt="Smart City competition certificate"><span>Smart City Competition · National Third Prize</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-inner"><span>Chengxin Shi · Chongqing University</span><a href="mailto:scx0108@outlook.com">scx0108@outlook.com <span aria-hidden="true">↗</span></a><span>© 2026</span></div></footer>
 </body>
 </html>
