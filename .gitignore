@@ -1,0 +1,6 @@
+# Local preview screenshots (not part of the site)
+preview-shots/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
